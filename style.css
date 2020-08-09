@@ -1,1 +1,98 @@
-/* To Do */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: small;
+  color: #222;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+
+header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto;
+  padding: 0 30px;
+}
+
+.topnav-left {
+  float: left;
+}
+
+.topnav-right {
+  display: flex;
+  align-items: center;
+}
+
+#google-apps img {
+  height: 30px;
+  width: 30px;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo img {
+  height: 272px;
+  width: 92px;
+}
+
+#search {
+  width: 520px;
+}
+
+#search-buttons button {
+  color: #5F6368;
+  margin-top: 20px;
+
+}
+
+#search-buttons button:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+
+/* Footer */
+
+footer {
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+.bottom-left {
+  padding: 0 15px;
+  color: #5F6368;
+  font-size: 14px;
+  float: left;
+}
+
+.bottom-right {
+  padding: 0 15px;
+  color: #5F6368;
+  font-size: 14px;
+  float: right;
+}

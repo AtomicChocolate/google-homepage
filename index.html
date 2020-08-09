@@ -2,40 +2,45 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Google</title>
+        <meta name="description" content="This page is a clone of the Google homepage">
+        <meta name="author" content="AtomicChocolate">
+        <link rel="stylesheet" href="style.css">
+        <title>Fake Google</title>
     </head>
     <body>
         <header class="container" id="header">
-            <div class="topnav">
+            <div class="topnav-left">
                 <a href="#">About</a>
                 <a href="#">Store</a>
-                <div class="topnav-right">
-                    <a href="#">Gmail</a>
-                    <a href="#">Images</a>
-                    <a href="#" id="google-apps"><img src="images/menu.png" alt="google-apps"></a>
-                    <a href="#" id="sign-in-button">Sign in</a>
-                </div>
             </div>
+            <div class="topnav-right">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <a href="#" id="google-apps"><img src="images/menu.png" alt="google-apps"></a>
+                <a href="#" id="sign-in-button">Sign in</a>
+            </div>
+        </header>    
         <main class="container">
             <img id="logo" src="images/googlelogo.png" alt="Google">
             <form>
                 <input id="search" type="text" name="text"></input> 
                 <br>
-                <button type="button">Google Search</button>
-                <button type="button">I'm Feeling Lucky</button>
+                <div id="search-buttons">
+                    <button type="button">Google Search</button>
+                    <button type="button">I'm Feeling Lucky</button>
+                </div>
             </form>
         </main>
         <footer class="container" id="footer">
-            <div class="bottom">
+            <div class="bottom-left">
                 <a href="#">Advertising</a>
                 <a href="#">Business</a>
                 <a href="#">How Search works</a>
-                <div class="bottom-right">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Settings</a>
-                </div>
             </div>
+            <div class="bottom-right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
             </div>
         </footer>
     </body>
