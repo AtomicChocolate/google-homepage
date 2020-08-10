@@ -26,9 +26,18 @@ header {
   float: left;
 }
 
+.topnav-left > a {
+  margin: 5px;
+}
+
 .topnav-right {
   display: flex;
   align-items: center;
+  
+}
+
+.topnav-right > a {
+  margin: 5px;
 }
 
 #google-apps img {
@@ -36,11 +45,25 @@ header {
   width: 30px;
 }
 
+#sign-in-button {
+  padding: 6px 12px;
+  color: white;
+  background: #4285f4;
+  border: 1px solid #4285f4;
+  outline: none;
+  font-weight: bold;
+}
+
+#sign-in-button:hover {
+  text-decoration: none;
+}
+
 /* Main */
 
 main {
-  display: flex;
+  margin: 150px;
   height: 300px;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -50,21 +73,59 @@ main {
   width: 92px;
 }
 
+#search-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 582px;
+	border: 1px solid #dfe1e5;
+	box-shadow: none;
+	border-radius: 24px;
+	height: 44px;
+	position: relative;
+	top: 20px;
+}
+
+#search-form:hover {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+#magglass {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  left: -5px;
+  fill: #9AA0A6;
+}
+
 #search {
   width: 520px;
+  border: none;
+  font-size: 125%;
 }
 
-#search-buttons button {
+#search-buttons > button {
+  border-style: none;
+  position: relative;
+  top: 40px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
   color: #5F6368;
-  margin-top: 20px;
-
+  font-family: arial, sans-serif; 
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
 }
 
-#search-buttons button:hover {
-  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-  background-color: #f8f8f8;
-  border: 1px solid #c6c6c6;
-  color: #222;
+#search-buttons > button:hover {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
 }
 
 /* Footer */
@@ -80,19 +141,28 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  
+  color: #5F6368;
 }
 
 .bottom-left {
   padding: 0 15px;
-  color: #5F6368;
-  font-size: 14px;
   float: left;
 }
 
-.bottom-right {
-  padding: 0 15px;
+.bottom-left > a {
+  margin: 5px;
   color: #5F6368;
   font-size: 14px;
+}
+
+
+.bottom-right {
+  padding: 0 15px;
   float: right;
+}
+
+.bottom-right > a {
+  margin: 5px;
+  color: #5F6368;
+  font-size: 14px;
 }
